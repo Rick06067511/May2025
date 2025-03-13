@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zurich - May 2025 Travel</title>
+    <link rel="stylesheet" href="https://dl.dropbox.com/scl/fi/ex3n8nn0dmxwbxzlifrgk/StylesSub.css?rlkey=puhe730zj94inf3dpv51gosdh&st=kr2pfdqo&dl=0">
+</head>
+<body>
+	<a href="https://www.dropbox.com/scl/fi/r5do7mz503rjueq7k52ky/Flights.html?rlkey=x71dlbnpavydlxmir628kr8aj&st=lkt738r3&raw=1" class="plane-overlay">
+    <img src="https://dl.dropbox.com/scl/fi/vl9p1cxonhlfcmpmjr3u2/smallplane.png?rlkey=4fbtqm38vh5fog41mh7p9j6dz&st=a9pcfjht&raw=1" alt="Plane Symbol">
+</a>
+    <header>
+        <div class="hero-banner">
+            <img src="https://dl.dropbox.com/scl/fi/aqwv2414aogxngeyplukk/zurich.jpg?rlkey=9zs164ko1g0bxkfkk1f2y0vai&st=z8t4lmu0&dl=0" alt="Zurich" class="hero-img">
+            <div class="hero-overlay">
+                <h1>
+                    Zurich - Switzerland <span class="flag-icon"><img src="https://dl.dropbox.com/scl/fi/mjmq6xw2qzcgb73x4910u/swi.png?rlkey=d8pr4mgt3zgli0hyu6ktrg67j&st=cd5nk4hm&dl=0" alt="Coun"></span>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="description">
+            <p><strong>Visit Dates:</strong> Sat, May 3 - Mon, May 5</p>
+        </section>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://www.dropbox.com/scl/fi/murq9zpvb0lowlke6v8bl/Index.html?rlkey=qnrgcclgdnhrh0nbdkhgl7wpp&st=rz0uqwr8&dl=0">Index</a></li>
+                <li><a href="https://www.dropbox.com/scl/fi/c6xkm87yn4enrakacpvl1/Zurich.html?rlkey=ua8fhpi5n0v1fe5u90jedmq6v&st=ch3h61ww&dl=0" class="active">Zurich</a></li>
+                <li><a href="https://www.dropbox.com/scl/fi/zc79w4mmzs39ddcsgoqm6/Liechtenstein.html?rlkey=5mdd9pwrjyojxd90sfndremx4&st=g5z2p4n2&dl=0">Liechtenstein</a></li>
+				<li><a href="https://www.dropbox.com/scl/fi/d4d22l8891a8zhjt1u9uz/Ljubljana.html?rlkey=id7eacxafejnmb29pr1e3paig&st=h8vytcjl&dl=0">Ljubljana</a></li>
+                <li><a href="https://www.dropbox.com/scl/fi/op78kj60n87dwbi9uefsz/Belgrade.html?rlkey=m474efddf5dkln5bv4o932cxj&st=5y3dhw7p&dl=0">Belgrade</a></li>
+                <li><a href="https://www.dropbox.com/scl/fi/4jjkfa3t55cnp3bejeuo5/Bucharest.html?rlkey=4b0crq7wjosx5fw9a2veda66a&st=xcsd57ul&dl=0">Bucharest</a></li>
+				<li><a href="https://www.dropbox.com/scl/fi/v5b5upakxl4ivvg69ssio/Istanbul.html?rlkey=nlehj89si13wqho6kjg0904ri&st=waf5o51w&dl=0">Istanbul</a></li>
+                <li><a href="https://www.dropbox.com/scl/fi/7ghs189toncoml9231h9k/Athens.html?rlkey=cy14sbnq8u0336815wmu6mkpv&st=rcs45nmb&dl=0">Athens</a></li>
+                <li><a href="https://www.dropbox.com/scl/fi/47w285vky2fpfrwxbuln9/Dubrovnik.html?rlkey=3s75hcy7q3ls09u6t8zc3guml&st=p7dmshf8&dl=0">Dubrovnik</a></li>
+				<li><a href="https://www.dropbox.com/scl/fi/7t8ntxr62yq500i4lhp3f/Mostar.html?rlkey=t39gmnr8b3kwox6ueudwg2oqm&st=s0685pwf&dl=0">Mostar</a></li>
+            </ul>
+        </nav>
+<div class="currency-converter">
+    <h2 class="currency-header">Currency Converter</h2>
+    <div class="currency-fields">
+        <input type="number" id="amount" class="currency-input" placeholder="Enter amount" min="0" step="0.01">
+    </div>
+    <div class="currency-fields">
+        <label for="fromCurrency" class="currency-label">From Currency:</label>
+        <select id="fromCurrency" class="currency-select">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound</option>
+            <option value="CHF" selected>Swiss Franc</option>
+            <option value="RSD">Serbian Dinar</option>
+            <option value="RON">Romanian Leu</option>
+            <option value="TRY">Turkish Lira</option>
+            <option value="BAM">Bosnia Mark</option>
+        </select>
+    </div>
+    <div class="currency-fields">
+        <label for="toCurrency" class="currency-label">To Currency:</label>
+        <select id="toCurrency" class="currency-select">
+            <option value="EUR">Euro</option>
+            <option value="GBP" selected>British Pound</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="RSD">Serbian Dinar</option>
+            <option value="RON">Romanian Leu</option>
+            <option value="TRY">Turkish Lira</option>
+            <option value="HRK">Croatian Kuna</option>
+            <option value="BAM">Bosnia Mark</option>
+        </select>
+    </div>
+    <div class="convert-button-container">
+        <button id="convertBtn" class="btn convert-button">Convert</button>
+    </div>
+    <div class="converted-amount-container">
+        <p id="result" class="converted-amount"></p>
+    </div>
+</div>
+
+
+
+
+        <section class="itinerary">
+            <table class="itinerary-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Activities</th>
+                    </tr>
+                </thead>
+                <tbody>        
+<tr>
+    <td>Day 1 - Sat- 11.50</td>
+    <td><ul><li>
+                Bahnofstrasse 
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.37172,8.53855&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+            <li>
+                Franmunster Church 
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.36978, 8.54083&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+            <li>
+                Grossmunsterplatz
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.36996, 8.54385&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+		    <li>
+                Zurich's Town Hall 
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.37155, 8.54268&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+			<li>
+                St Peter's
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.37114, 8.54071&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+			
+			<li>
+                Lindenhof
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.37218, 8.54131&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li></ul></td>
+		
+	<tr>
+<td>Day 2 - Sun</td>
+<td><ul>
+
+           <li>
+               Niederdorf
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.37489, 8.54464&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+					  <li>
+                Swiss National Museum
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.3791, 8.54054&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+					  <li>
+                Zurich Landesmuseum - River Cruise
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.37907, 8.5415&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+					  <li>
+                Zurichhorn
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.3535, 8.5519&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>
+							  <li>
+                Zurich Opera House
+                <a href="#" class="map-link" data-map-src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ll=47.36521, 8.54667&z=16&ehbc=2E312F">
+                    <span class="map-icon">&#x1F4CD;</span></a></li>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</ul>
+    </td>
+</tr>
+
+                    
+					
+					
+					
+					
+					
+					
+                </tbody>
+            </table>
+        </section>
+		<br></br>
+		<section id="map-section" margin-top: 2rem;">
+    <iframe 
+        id="map-iframe" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        loading="lazy" 
+        allowfullscreen
+        src="https://www.google.com/maps/d/u/1/embed?mid=16iMamQqVit2xdxV3uoPdgpYJxEVK5gA&ehbc=2E312F">
+    </iframe>
+</section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Richard Gillett. All Rights Reserved.</p>
+    </footer>	
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mapLinks = document.querySelectorAll('.map-link'); // All map links
+    const mapIframe = document.getElementById('map-iframe'); // The embedded map
+    const mapSection = document.getElementById('map-section'); // Map section container
+
+    mapLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            
+            // Get the map URL from the data attribute
+            const mapSrc = link.getAttribute('data-map-src');
+            
+            // Update the iframe src and display the map section
+            mapIframe.src = mapSrc;
+            mapSection.style.display = 'block';
+            
+            // Optionally scroll to the map section
+            mapSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+document.getElementById("convertBtn").addEventListener("click", convertCurrency);
+
+async function convertCurrency() {
+    const amount = document.getElementById("amount").value;
+    const fromCurrency = document.getElementById("fromCurrency").value;
+    const toCurrency = document.getElementById("toCurrency").value;
+    const apiKey = 'bbc95045438478c425f0d592'; // Replace with your ExchangeRate-API key
+
+    if (!amount || amount <= 0) {
+        alert("Please enter a valid amount!");
+        return;
+    }
+
+    const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurrency}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const rate = data.conversion_rates[toCurrency];
+
+        if (rate) {
+            const convertedAmount = (amount * rate).toFixed(2);
+            document.getElementById("result").innerText = 
+                `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+        } else {
+            alert("Error: Currency not found!");
+        }
+    } catch (error) {
+        console.error(error);
+        alert("Error fetching exchange rates. Please try again later.");
+    }
+}
+
+    });
+
+</script>
+</body>
+</html>
