@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="protected-content">
 <title>May 2025 - Travel Itinerary</title>
 <link rel="stylesheet" href="https://dl.dropbox.com/scl/fi/mhimykbpo4pgp7jp5opbj/Styles.css?rlkey=6z8zvmutay3km9sg98ge1kzn6&st=c05u0qmw&dl=0">
 </head>
@@ -99,7 +100,7 @@
 <footer>
 <p>&copy; 2025 Richard Gillett. All Rights Reserved.</p>
 </footer>
-
+</div>
 <script>
 function toggleOverlay(card) {
     const overlay = card.querySelector('.overlay');
@@ -118,7 +119,7 @@ if (enteredPassword !== password) {
     document.body.innerHTML = '<h1>Access Denied</h1><p>Incorrect password. Please try again.</p>';
 } else {
     // Continue loading the page content
-    document.body.innerHTML = '<h1>Welcome to Your Website</h1>';
+    document.getElementById('protected-content').style.display = 'block';
     // You can insert the actual content of your website here or let it load normally.
 }
 
