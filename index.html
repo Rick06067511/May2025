@@ -109,6 +109,22 @@ document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('click', () => toggleOverlay(card));
 });
 
+ const password = '270619902107199525042025'; // Choose a strong password
+    let enteredPassword = prompt('Enter password to access this website:');
+
+    // Check if the entered password matches
+    if (enteredPassword !== password) {
+        document.body.innerHTML = '<h1>Access Denied</h1><p>Incorrect password. Please try again.</p>';
+    } else {
+        // Continue loading the page content
+        document.body.innerHTML = '<h1>Welcome to Your Website</h1>';
+        // You can insert the actual content of your website here or let it load normally.
+    }
+
+
+
+    
+
 </script>
 </body>
 </html>
