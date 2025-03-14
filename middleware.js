@@ -1,10 +1,10 @@
 export const config = {
-  matcher: '/:path*', // Apply this middleware to all routes
+  matcher: '/:path*', // Apply to all paths
 };
 
 export function middleware(req) {
   const password = 'mysecurepassword'; // Change this to your desired password
-  const encodedPassword = 'bXlzZWN1cmVwYXNzd29yZA==';  // Base64 of 'mysecurepassword'
+  const encodedPassword = 'bXlzZWN1cmVwYXNzd29yZA=='; // Base64 of 'mysecurepassword'
   
   const authHeader = req.headers.get('authorization');
 
@@ -15,9 +15,10 @@ export function middleware(req) {
     });
   }
 
+  // Continue serving the site if the password is correct
   return new Response('Authorized', {
     status: 200,
-    body: 'Welcome to the site!',  // Continue loading your content here if the user is authenticated
+    body: 'Welcome to the site!',  // You can return your actual content here
   });
 }
 
