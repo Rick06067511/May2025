@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(req) {
-    const password = 'mysecurepassword'; // Change this
-    const encodedPassword = Buffer.from(password).toString('base64');
+    const password = 'mysecurepassword'; // Change this to your own password
+    const encodedPassword = 'bXlzZWN1cmVwYXNzd29yZA==';  // Base64 of 'mysecurepassword'
     const authHeader = req.headers.get('authorization');
 
     if (!authHeader || authHeader !== `Basic ${encodedPassword}`) {
